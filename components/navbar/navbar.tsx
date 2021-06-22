@@ -16,7 +16,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="w-full bg-primary text-white flex justify-between items-center">
+    <div className="w-full bg-primary text-white flex justify-between items-center sticky top-0">
       <div className="flex items-center font-bold">
         <figure>
           <Image src={logo} width={logoSize} height={logoSize} />

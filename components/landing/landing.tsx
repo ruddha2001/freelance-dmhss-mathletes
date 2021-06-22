@@ -1,0 +1,50 @@
+import React from "react";
+
+export default function Landing() {
+  return (
+    <div className="h-screen bg-landing-background text-center">
+      <p
+        className="text-secondary text-6xl md:text-9xl lg:text-landing pt-16 md:pt-28"
+        style={{ fontFamily: "Pacifico, sans-serif" }}
+      >
+        Mathletes
+      </p>
+      <p
+        className="text-white mt-5 text-xl md:text-5xl"
+        style={{ fontFamily: "Pacifico, sans-serif" }}
+      >
+        Maths around us: explore if you can
+      </p>
+      <p className="text-white text-4xl md:text-7xl font-semibold mt-32 mb-20">
+        17 July to 18 July, 2021
+      </p>
+      <span className="bg-yellow-500 text-black mx-auto rounded-lg text-3xl md:text-4xl p-5">
+        Register Now
+      </span>
+      <p className="text-center text-white mt-36 text-base md:text-xl animate-bounce">
+        Scroll down to learn more
+        <svg
+          className="inline-block ml-2"
+          width="28"
+          height="28"
+          viewBox="0 0 28 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14 26C20.6274 26 26 20.6274 26 14C26 7.37258 20.6274 2 14 2C7.37258 2 2 7.37258 2 14C2 20.6274 7.37258 26 14 26Z"
+            stroke="white"
+            strokeWidth="4"
+          />
+          <path
+            d="M9.20001 12.2L14 17L18.8 12.2"
+            stroke="white"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </p>
+    </div>
+  );
+}
