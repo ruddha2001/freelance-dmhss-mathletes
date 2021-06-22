@@ -10,6 +10,9 @@ module.exports = {
       backgroundImage: (theme) => ({
         "landing-background": "url('/background.png')",
       }),
+      fontSize: {
+        landing: "200px",
+      },
     },
   },
   variants: {
