@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <div className="w-full bg-primary text-white flex justify-between items-center">
-      <div className="flex items-center">
+      <div className="flex items-center font-bold">
         <figure>
           <Image src={logo} width={logoSize} height={logoSize} />
         </figure>
@@ -31,7 +31,11 @@ export default function Navbar() {
           </span>
         </p>
       </div>
-      <div>Hello</div>
+      <div className="hidden lg:block">
+        <span className="mx-8 text-xl cursor-pointer">Events</span>
+        <span className="mx-8 text-xl cursor-pointer">FAQs</span>
+        <span className="rounded-2xl bg-yellow-500 text-black p-3 text-xl mx-5 cursor-pointer">Register</span>
+      </div>
     </div>
   );
 }
