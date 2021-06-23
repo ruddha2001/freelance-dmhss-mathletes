@@ -44,7 +44,10 @@ export default function Faq() {
       <Accordion className="mt-10">
         {faqData.map((faq) => {
           return (
-            <AccordionItem className="border-2 border-black rounded-md p-4 text-base md:text-xl my-5">
+            <AccordionItem
+              className="border-2 border-black rounded-md p-4 text-base md:text-xl my-5"
+              key={faq.question}
+            >
               <AccordionItemHeading>
                 <AccordionItemButton className="font-bold">
                   Q) {faq.question}

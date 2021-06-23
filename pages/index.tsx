@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { InferGetStaticPropsType } from "next";
+import { InferGetServerSidePropsType } from "next";
 import axios from "axios";
 
 import Navbar from "../components/navbar/navbar";
@@ -10,7 +10,7 @@ import Credits from "../components/footer/credits";
 import Faq from "../components/faq/faq";
 import School from "../components/footer/school";
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   try {
     const res = await axios.get(`${process.env.BASE_URL}/api/events`);
     const eventNames: string[] = res.data.list;
@@ -33,7 +33,7 @@ export const getStaticProps = async () => {
 
 export default function index({
   eventNames,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <>
       <Head>

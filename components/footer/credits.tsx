@@ -16,7 +16,7 @@ export default function Credits() {
         <tbody>
           <tr>
             <td className="align-middle pr-2">
-              <Image src={AniruddhaLogo} height={40} width={40} />
+              <Image src={AniruddhaLogo} height={40} width={40} alt="AC" />
             </td>
             <td className="align-baseline pt-2 font-mono">
               Aniruddha Chatterjee
