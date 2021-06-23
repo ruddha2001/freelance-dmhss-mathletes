@@ -3,7 +3,7 @@ import EventCard from "./eventCard";
 
 export default function Events({ eventName }) {
   return (
-    <div className="bg-white px-7 md:px-12 lg:px-36 mt-10">
+    <div className="bg-white px-7 md:px-12 lg:px-36 mt-10" id="events">
       <h1 className="text-4xl mb-2">Events</h1>
       <svg
         width="200"
@@ -20,9 +20,9 @@ export default function Events({ eventName }) {
           strokeLinejoin="round"
         />
       </svg>
-      <div className="flex justify-between">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-10 justify-between text-center mt-10 text-white">
         {eventName.map((name) => {
-          return <EventCard name={name} />;
+          return <EventCard name={name} key={name} />;
         })}
       </div>
     </div>
