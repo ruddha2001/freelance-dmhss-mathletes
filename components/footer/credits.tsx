@@ -13,10 +13,16 @@ export default function Credits() {
           window.open("https://aniruddha.net");
         }}
       >
-        <td className="align-middle pr-2">
-          <Image src={AniruddhaLogo} height={40} width={40} />
-        </td>
-        <td className="align-baseline pt-2 font-mono">Aniruddha Chatterjee</td>
+        <tbody>
+          <tr>
+            <td className="align-middle pr-2">
+              <Image src={AniruddhaLogo} height={40} width={40} />
+            </td>
+            <td className="align-baseline pt-2 font-mono">
+              Aniruddha Chatterjee
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );
