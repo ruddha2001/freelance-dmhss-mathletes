@@ -7,6 +7,8 @@ import Navbar from "../components/navbar/navbar";
 import Landing from "../components/landing/landing";
 import Events from "../components/events/events";
 import Credits from "../components/footer/credits";
+import Faq from "../components/faq/faq";
+import School from "../components/footer/school";
 
 export const getStaticProps = async () => {
   try {
@@ -73,6 +75,8 @@ export default function index({
       <Navbar />
       <Landing />
       <Events eventName={eventNames} />
+      <Faq />
+      <School />
       <Credits />
     </>
   );

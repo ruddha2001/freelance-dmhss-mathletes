@@ -32,9 +32,19 @@ export default function Navbar() {
         </p>
       </div>
       <div className="hidden lg:block">
-        <span className="mx-8 text-xl cursor-pointer">Events</span>
-        <span className="mx-8 text-xl cursor-pointer">FAQs</span>
-        <span className="rounded-2xl bg-yellow-500 text-black p-3 text-xl mx-5 cursor-pointer">Register</span>
+        <a
+          className="mx-8 text-xl cursor-pointer"
+          href="/#events
+        "
+        >
+          Events
+        </a>
+        <a className="mx-8 text-xl cursor-pointer" href="/#faqs">
+          FAQs
+        </a>
+        <span className="rounded-2xl bg-yellow-500 text-black p-3 text-xl mx-5 cursor-pointer">
+          Register
+        </span>
       </div>
     </div>
   );
