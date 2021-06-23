@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary: "#2D111D",
         secondary: "#B79866",
+        lightMaroon: "#6E4C5C",
       },
       backgroundImage: (theme) => ({
         "landing-background": "url('/background.png')",
