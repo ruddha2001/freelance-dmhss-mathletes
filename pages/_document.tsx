@@ -15,7 +15,7 @@ class MyDocument extends Document {
           />
           <meta
             name="title"
-            content="Mathletes - Douglas Memorial H.S. School"
+            content="Mathletes Meet - Douglas Memorial H.S. School"
           />
           <meta
             name="description"
@@ -25,7 +25,7 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://mathletes.dmhss.org/" />
           <meta
             property="og:title"
-            content="Mathletes - Douglas Memorial H.S. School"
+            content="Mathletes Meet - Douglas Memorial H.S. School"
           />
           <meta
             property="og:description"
@@ -39,7 +39,7 @@ class MyDocument extends Document {
           <meta property="twitter:url" content="https://mathletes.dmhss.org/" />
           <meta
             property="twitter:title"
-            content="Mathletes - Douglas Memorial H.S. School"
+            content="Mathletes Meet - Douglas Memorial H.S. School"
           />
           <meta
             property="twitter:description"
@@ -47,7 +47,7 @@ class MyDocument extends Document {
           />
           <meta
             property="twitter:image"
-            content="https://billboard.srmkzilla.net/api/blog?title=Mathletes&subtitle=Douglas%20Memorial%20H.S.%20School&theme=dark&fontSize=180px"
+            content="https://billboard.srmkzilla.net/api/blog?title=Mathletes%20Meet&subtitle=Douglas%20Memorial%20H.S.%20School&theme=dark&fontSize=180px"
           />
         </Head>
         <body>

@@ -37,7 +37,7 @@ export default function index({
   return (
     <>
       <Head>
-        <title>Mathletes - Douglas Memorial H.S. School</title>
+        <title>Mathletes Meet - Douglas Memorial H.S. School</title>
       </Head>
       <Navbar />
       <Landing />

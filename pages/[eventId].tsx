@@ -35,7 +35,7 @@ export default function Event({
   return (
     <>
       <Head>
-        <title>Mathletes - Douglas Memorial H.S. School</title>
+        <title>Mathletes Meet - Douglas Memorial H.S. School</title>
       </Head>
       <Navbar />
       <EventDescription data={eventData} />
