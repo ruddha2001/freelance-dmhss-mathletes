@@ -13,11 +13,11 @@ import School from "../components/footer/school";
 export const getServerSideProps = async () => {
   try {
     const res = await axios.get(`${process.env.BASE_URL}/api/events`);
-    const eventNames: string[] = res.data.list;
+    const eventArray: { name: string; slug: string }[] = res.data.list;
 
     return {
       props: {
-        eventNames,
+        eventArray,
       },
     };
   } catch (error) {
@@ -32,7 +32,7 @@ export const getServerSideProps = async () => {
 };
 
 export default function index({
-  eventNames,
+  eventArray,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <>
@@ -41,7 +41,7 @@ export default function index({
       </Head>
       <Navbar />
       <Landing />
-      <Events eventName={eventNames} />
+      <Events event={eventArray} />
       <Faq />
       <School />
       <Credits />

@@ -4,6 +4,7 @@ import EventDescription from "../components/events/eventDescription";
 import Navbar from "../components/navbar/navbar";
 import axios from "axios";
 import { InferGetServerSidePropsType } from "next";
+import Credits from "../components/footer/credits";
 
 export const getServerSideProps = async ({ query: { eventId } }) => {
   try {
@@ -38,6 +39,7 @@ export default function Event({
       </Head>
       <Navbar />
       <EventDescription data={eventData} />
+      <Credits />
     </>
   );
 }
