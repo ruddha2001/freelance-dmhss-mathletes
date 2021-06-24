@@ -2,7 +2,7 @@ import nc from "next-connect";
 import type { NextApiRequest, NextApiResponse } from "next";
 import rateLimit from "express-rate-limit";
 
-import database from "./utilities/database";
+import database from "../utilities/database";
 
 const rateLimiter = rateLimit({
   windowMs: 1 * 60 * 1000,

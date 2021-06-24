@@ -1,17 +1,43 @@
 import React from "react";
-import { useRouter } from "next/router";
 import Head from "next/head";
 import EventDescription from "../components/events/eventDescription";
+import Navbar from "../components/navbar/navbar";
+import axios from "axios";
+import { InferGetServerSidePropsType } from "next";
 
-export default function Event() {
-  const req = useRouter();
-  const { eventId } = req.query;
+export const getServerSideProps = async ({ query: { eventId } }) => {
+  try {
+    const res = await axios.get(
+      `${process.env.BASE_URL}/api/events/${eventId}`
+    );
+    const eventData = res.data;
+
+    return {
+      props: {
+        eventData,
+      },
+    };
+  } catch (error) {
+    console.error(error);
+    return {
+      redirect: {
+        destination: "/500",
+        permanent: false,
+      },
+    };
+  }
+};
+
+export default function Event({
+  eventData,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <>
       <Head>
         <title>Mathletes - Douglas Memorial H.S. School</title>
       </Head>
-      <EventDescription id={eventId} />
+      <Navbar />
+      <EventDescription data={eventData} />
     </>
   );
 }

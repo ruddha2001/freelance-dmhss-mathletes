@@ -4,10 +4,10 @@ export default function Landing() {
   return (
     <div className="h-screen bg-landing-background text-center">
       <p
-        className="text-secondary text-6xl md:text-9xl lg:text-landing pt-16 md:pt-28"
+        className="text-secondary text-4xl md:text-7xl lg:text-9xl pt-16 md:pt-28"
         style={{ fontFamily: "Pacifico, sans-serif" }}
       >
-        Mathletes
+        DMHSS Mathletes Meet
       </p>
       <p
         className="text-white mt-5 text-xl md:text-5xl"
@@ -15,7 +15,7 @@ export default function Landing() {
       >
         Maths around us: explore if you can
       </p>
-      <p className="text-white text-4xl md:text-7xl font-semibold mt-32 mb-20">
+      <p className="text-white text-4xl md:text-7xl font-semibold mt-32 mb-16 md:mb-20">
         17 July to 18 July, 2021
       </p>
       <span className="bg-yellow-500 text-black mx-auto rounded-lg text-3xl md:text-4xl p-5">
