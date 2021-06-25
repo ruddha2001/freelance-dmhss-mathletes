@@ -18,7 +18,12 @@ export default function Landing() {
       <p className="text-white text-4xl md:text-7xl font-semibold mt-32 mb-16 md:mb-20">
         17 July to 18 July, 2021
       </p>
-      <span className="bg-yellow-500 text-black mx-auto rounded-lg text-3xl md:text-4xl p-5">
+      <span
+        className="bg-yellow-500 text-black mx-auto rounded-lg text-3xl md:text-4xl p-5 cursor-pointer"
+        onClick={() => {
+          window.location.href = "/register";
+        }}
+      >
         Register Now
       </span>
       <p className="text-center text-white mt-36 text-base md:text-xl animate-bounce">

@@ -226,7 +226,7 @@ export default function Registration() {
             </label>
             <label className="block text-sm md:text-xl">
               <Field type="checkbox" name="checked" value="quizzical" />
-              <span className="ml-3">Let's get Quizzical</span>
+              <span className="ml-3">Let&apos;s get Quizzical</span>
             </label>
             <label className="block text-sm md:text-xl">
               <Field type="checkbox" name="checked" value="ninjas" />
@@ -639,7 +639,7 @@ export default function Registration() {
             {formik.values.checked.find((value) => value === "quizzical") ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
-                  Let's get Quizzical
+                  Let&apos;s get Quizzical
                 </label>
                 <input
                   id="cube1"
