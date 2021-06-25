@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "express-rate-limit": "^5.2.6",
+    "formik": "^2.2.9",
     "mongodb": "^3.6.9",
     "next": "11.0.0",
     "next-connect": "^0.10.1",
@@ -18,7 +19,8 @@
     "react-accessible-accordion": "^3.3.4",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
-    "sass": "^1.35.1"
+    "sass": "^1.35.1",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@types/express-rate-limit": "^5.1.2",

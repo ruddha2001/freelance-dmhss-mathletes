@@ -54,6 +54,9 @@ export default function EventDescription({ data }) {
         className="text-center bg-yellow-500 mx-auto p-4 md:p-5 mt-10 rounded-lg cursor-pointer shadow-lg hover:shadow-xl"
         title="Register now for the event!"
         style={{ width: "max-content" }}
+        onClick={() => {
+          window.location.href = "/register";
+        }}
       >
         Register Now
       </p>

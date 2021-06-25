@@ -45,7 +45,12 @@ export default function Navbar() {
           <a className="mx-8 text-xl cursor-pointer">FAQs</a>
         </Link>
 
-        <span className="rounded-2xl bg-yellow-500 text-black p-3 text-xl mx-5 cursor-pointer">
+        <span
+          className="rounded-2xl bg-yellow-500 text-black p-3 text-xl mx-5 cursor-pointer"
+          onClick={() => {
+            window.location.href = "/register";
+          }}
+        >
           Register
         </span>
       </div>
