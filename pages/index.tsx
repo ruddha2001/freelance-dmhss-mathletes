@@ -10,6 +10,7 @@ import Credits from "../components/footer/credits";
 import Faq from "../components/faq/faq";
 import School from "../components/footer/school";
 import Foreward from "../components/foreword/foreward";
+import LandingSchedule from "../components/schedule/landingSchedule";
 
 export const getServerSideProps = async () => {
   try {
@@ -43,6 +44,7 @@ export default function index({
       <Navbar />
       <Landing />
       <Foreward />
+      <LandingSchedule />
       <Events event={eventArray} />
       <Faq />
       <School />
