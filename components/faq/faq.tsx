@@ -24,7 +24,7 @@ const faqData = [
 
 export default function Faq() {
   return (
-    <div className="bg-white px-7 md:px-12 lg:px-36 mt-10" id="faqs">
+    <div className="bg-white px-7 md:px-12 lg:px-36 mt-16" id="faqs">
       <h1 className="text-4xl mb-2">FAQs</h1>
       <svg
         width="255"
