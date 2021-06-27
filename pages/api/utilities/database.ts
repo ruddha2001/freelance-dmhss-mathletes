@@ -3,13 +3,13 @@ import { Db, MongoClient } from "mongodb";
 let db: Db;
 
 async function initializeClient(): Promise<Db> {
+  console.log(process.env.MONGODB_URI);
   const client = await MongoClient.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
     useUnifiedTopology: true,
     ignoreUndefined: true,
   });
 
-  return client.db();
+  return client.db("dmhss");
 }
 
 export default async (): Promise<Db> => {
