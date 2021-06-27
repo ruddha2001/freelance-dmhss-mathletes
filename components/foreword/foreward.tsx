@@ -21,11 +21,11 @@ export default function Foreward() {
         <br />
         <br />
         Keeping these in mind, Douglas Memorial Higher Secondary School will be
-        hosting a two day virtual festival of Mathematics called 'Douglas
-        Mathletes Meet 2021-2022', the sole purpose of which is to break the
-        monotonous rut that we are all in since the beginning of the pandemic
-        and to bring forth the children together where they can create, innovate
-        and explore Mathematics like the way never imagined before.
+        hosting a two day virtual festival of Mathematics called &apos;Douglas
+        Mathletes Meet 2021-2022&apos;, the sole purpose of which is to break
+        the monotonous rut that we are all in since the beginning of the
+        pandemic and to bring forth the children together where they can create,
+        innovate and explore Mathematics like the way never imagined before.
         <br />
         <br />
         The events of the festival were designed in such a manner that not only
