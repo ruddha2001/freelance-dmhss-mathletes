@@ -13,6 +13,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+            rel="stylesheet"
+          ></link>
           <meta
             name="title"
             content="Mathletes Meet - Douglas Memorial H.S. School"

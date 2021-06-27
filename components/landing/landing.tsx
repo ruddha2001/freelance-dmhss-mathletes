@@ -15,7 +15,7 @@ export default function Landing() {
       >
         Maths around us: explore if you can
       </p>
-      <p className="text-white text-4xl md:text-7xl font-semibold mt-32 mb-16 md:mb-20">
+      <p className="text-white text-3xl md:text-7xl font-semibold mt-32 mb-16 md:mb-20">
         17 July to 18 July, 2021
       </p>
       <span

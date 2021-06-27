@@ -38,6 +38,12 @@ export default function Navbar() {
         </p>
       </div>
       <div className="hidden lg:block">
+        <Link href="/">
+          <a className="mx-8 text-xl cursor-pointer">Home</a>
+        </Link>
+        <Link href="/schedule">
+          <a className="mx-8 text-xl cursor-pointer">Schedule</a>
+        </Link>
         <Link href="/#events">
           <a className="mx-8 text-xl cursor-pointer">Events</a>
         </Link>
