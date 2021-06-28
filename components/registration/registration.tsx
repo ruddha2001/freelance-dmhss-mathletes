@@ -4,6 +4,28 @@ import { formSchema } from "./form.schema";
 import axios from "axios";
 
 export default function Registration() {
+  const guidelines = [
+    "Participants must attend the Inter school Mathematics fest, Mathletes 2021 in their school uniform.",
+    "Participants must provide their Aadhar cards/ birth certificates  or  bonafide certificates issued from their schools.",
+    "The host school will not be held responsible for any kind of technical glitch faced by the participating school  during the event.",
+    "Cameras should be appropriately placed during all the online events.",
+    "Resorting to the use of unfair means will lead to the disqualification of the participants.",
+    "An alternative arrangement will be made by the host school if it faces any technical glitch.",
+    "The presence of any other person in the frame during the event will not be encouraged.",
+    "The presence of the participant through out  the event is mandatory.",
+    "Unique registration number will be provided to each participant.",
+    "No verbal communication with anyone is allowed during the live events.",
+    "The schedule and the timings of the events are subject to change.",
+    "All decisions of the judges will be considered final and abiding.",
+    "Participants  must make all arrangements of their stationeries.",
+    "Participants  are advised to join the Zoom meeting at least 5 to 6 minutes prior to their scheduled time.",
+    "Participants should introduce themselves at the onset of the events using their Unique Registration number.",
+    "Participants   have to display their materials  before the invigilators.",
+    "A student  cannot  participate in more than 4 events.",
+    "The first three schools to register for DDMx  will be considered eligible to participate in the event.",
+    "A school can participate in any number or combination of events.",
+    "For any kind of query during the online event, the participant may contact the Event  Coordinator.",
+  ];
   const formik = useFormik({
     initialValues: {
       schoolName: "",
@@ -71,6 +93,15 @@ export default function Registration() {
       <div className="bg-white px-7 md:px-12 lg:px-96 mt-10" id="form">
         <p className="text-4xl mb-10 font-bold">
           DMHSS Mathletes Meet - Registration
+        </p>
+        <p className="text-sm md:text-xl">
+          By registering for DMHSS Mathletes Meet, you agree to abide by the
+          following general guidelines:
+          <ul style={{ listStyleType: "disc" }} className="pl-5 mt-3 mb-10">
+            {guidelines.map((guideline, index) => (
+              <li key={index}>{guideline}</li>
+            ))}
+          </ul>
         </p>
         <FormikProvider value={formik}>
           <form onSubmit={formik.handleSubmit}>
