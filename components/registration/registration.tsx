@@ -76,9 +76,8 @@ export default function Registration() {
           document.getElementById("submit-button") as HTMLButtonElement
         ).disabled = true;
         try {
-          await axios.post("/api/register", values, {});
-          document.getElementById("form").style.display = "none";
-          document.getElementById("success").style.display = "block";
+          const res = await axios.post("/api/register", values, {});
+          window.location.href = `/upload/${res.data.id}`;
         } catch (error) {
           console.log(error);
           alert(error.message);
@@ -734,17 +733,6 @@ export default function Registration() {
             </button>
           </form>
         </FormikProvider>
-      </div>
-      <div
-        className="bg-white px-7 md:px-12 lg:px-96 mt-10"
-        id="success"
-        style={{ display: "none" }}
-      >
-        <p className="text-center text-4xl">Congratulations!</p>
-        <p className="text-center text-2xl mt-5">
-          You have successfully registered for DMHSS Mathletes Meet. In case of
-          any queries, you can drop us an email at info@dmhss.org.
-        </p>
       </div>
     </>
   );
