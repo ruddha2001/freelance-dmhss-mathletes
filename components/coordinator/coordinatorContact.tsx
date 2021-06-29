@@ -10,7 +10,7 @@ export default function CoordinatorContact() {
             colSpan={4}
             className="border-2 border-black text-2xl py-3 font-bold"
           >
-            Day 1 - 17 July 2021
+            Day 1 - 24 July 2021
           </td>
         </tr>
         <tr>
@@ -70,7 +70,7 @@ export default function CoordinatorContact() {
             colSpan={4}
             className="border-2 border-black text-2xl py-3 font-bold"
           >
-            Day 2 - 18 July 2021
+            Day 2 - 25 July 2021
           </td>
         </tr>
         <tr>

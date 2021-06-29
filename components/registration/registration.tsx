@@ -31,9 +31,14 @@ export default function Registration() {
   const formik = useFormik({
     initialValues: {
       schoolName: "",
-      schoolRepresentativeName: "",
-      schoolRepresentativeEmail: "",
-      schoolRepresentativePhone: "",
+      schoolEmail: "",
+      schoolPrincipal: "",
+      studentRepresentativeName: "",
+      studentRepresentativeEmail: "",
+      studentRepresentativePhone: "",
+      teacherRepresentativeName: "",
+      teacherRepresentativeEmail: "",
+      teacherRepresentativePhone: "",
       checked: [],
       art1: "",
       art2: "",
@@ -98,6 +103,10 @@ export default function Registration() {
         <p className="text-sm md:text-xl mb-10">
           <span className="font-bold underline">General Guidelines</span>
           <ul style={{ listStyleType: "disc" }} className="pl-5 mt-3">
+            <li>
+              Last date to register is{" "}
+              <span className="font-semibold">8th July 2021</span>.
+            </li>
             {guidelines.map((guideline, index) => (
               <li key={index}>{guideline}</li>
             ))}
@@ -134,25 +143,69 @@ export default function Registration() {
             ) : null}
 
             <label
-              htmlFor="schoolRepresentativeName"
+              htmlFor="schoolEmail"
               className="text-base md:text-xl font-bold"
             >
-              Full Name - School Representative
+              School Email
             </label>
             <input
-              id="schoolRepresentativeName"
-              name="schoolRepresentativeName"
-              type="schoolRepresentativeName"
-              placeholder="Please enter the full name of the school representative."
+              id="schoolEmail"
+              name="schoolEmail"
+              type="schoolEmail"
+              placeholder="Please enter the email address of the school."
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              value={formik.values.schoolRepresentativeName}
+              value={formik.values.schoolEmail}
               className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
             />
-            {formik.touched.schoolRepresentativeName &&
-            formik.errors.schoolRepresentativeName ? (
+            {formik.touched.schoolEmail && formik.errors.schoolEmail ? (
               <div className="-mt-3 text-red-600">
-                {formik.errors.schoolRepresentativeName}
+                {formik.errors.schoolEmail}
+              </div>
+            ) : null}
+
+            <label
+              htmlFor="schoolPrincipal"
+              className="text-base md:text-xl font-bold"
+            >
+              Full Name of the Principal
+            </label>
+            <input
+              id="schoolPrincipal"
+              name="schoolPrincipal"
+              type="schoolPrincipal"
+              placeholder="Please enter the full name of the school principal."
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.schoolPrincipal}
+              className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+            />
+            {formik.touched.schoolPrincipal && formik.errors.schoolPrincipal ? (
+              <div className="-mt-3 text-red-600">
+                {formik.errors.schoolPrincipal}
+              </div>
+            ) : null}
+
+            <label
+              htmlFor="studentRepresentativeName"
+              className="text-base md:text-xl font-bold"
+            >
+              Full Name - Student Representative
+            </label>
+            <input
+              id="studentRepresentativeName"
+              name="studentRepresentativeName"
+              type="studentRepresentativeName"
+              placeholder="Please enter the full name of the student representative."
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.studentRepresentativeName}
+              className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+            />
+            {formik.touched.studentRepresentativeName &&
+            formik.errors.studentRepresentativeName ? (
+              <div className="-mt-3 text-red-600">
+                {formik.errors.studentRepresentativeName}
               </div>
             ) : null}
 
@@ -160,22 +213,68 @@ export default function Registration() {
               htmlFor="schoolRepresentativeEmail"
               className="text-base md:text-xl font-bold"
             >
-              Email - School Representative
+              Email - Student Representative
             </label>
             <input
-              id="schoolRepresentativeEmail"
-              name="schoolRepresentativeEmail"
-              type="schoolRepresentschoolRepresentativeEmailativeName"
-              placeholder="Please enter the email address of the school representative."
+              id="studentRepresentativeEmail"
+              name="studentRepresentativeEmail"
+              type="studentRepresentativeEmail"
+              placeholder="Please enter the email address of the student representative."
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              value={formik.values.schoolRepresentativeEmail}
+              value={formik.values.studentRepresentativeEmail}
               className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
             />
-            {formik.touched.schoolRepresentativeEmail &&
-            formik.errors.schoolRepresentativeEmail ? (
+            {formik.touched.studentRepresentativeEmail &&
+            formik.errors.studentRepresentativeEmail ? (
               <div className="-mt-3 text-red-600">
-                {formik.errors.schoolRepresentativeEmail}
+                {formik.errors.studentRepresentativeEmail}
+              </div>
+            ) : null}
+
+            <label
+              htmlFor="studentRepresentativePhone"
+              className="text-base md:text-xl font-bold"
+            >
+              Phone number - Student Representative
+            </label>
+            <input
+              id="studentRepresentativePhone"
+              name="studentRepresentativePhone"
+              type="studentRepresentativePhone"
+              placeholder="Please enter the 10 digit phone number of the student representative."
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.studentRepresentativePhone}
+              className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+            />
+            {formik.touched.studentRepresentativePhone &&
+            formik.errors.studentRepresentativePhone ? (
+              <div className="-mt-3 text-red-600">
+                {formik.errors.studentRepresentativePhone}
+              </div>
+            ) : null}
+
+            <label
+              htmlFor="teacherRepresentativeName"
+              className="text-base md:text-xl font-bold"
+            >
+              Full Name - Teacher Representative
+            </label>
+            <input
+              id="teacherRepresentativeName"
+              name="teacherRepresentativeName"
+              type="teacherRepresentativeName"
+              placeholder="Please enter the full name of the teacher representative."
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.teacherRepresentativeName}
+              className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+            />
+            {formik.touched.teacherRepresentativeName &&
+            formik.errors.teacherRepresentativeName ? (
+              <div className="-mt-3 text-red-600">
+                {formik.errors.teacherRepresentativeName}
               </div>
             ) : null}
 
@@ -183,27 +282,50 @@ export default function Registration() {
               htmlFor="schoolRepresentativeEmail"
               className="text-base md:text-xl font-bold"
             >
-              Phone number - School Representative
+              Email - Teacher Representative
             </label>
             <input
-              id="schoolRepresentativePhone"
-              name="schoolRepresentativePhone"
-              type="schoolRepresentativePhone"
-              placeholder="Please enter the 10 digit phone number of the school representative."
+              id="teacherRepresentativeEmail"
+              name="teacherRepresentativeEmail"
+              type="teacherRepresentativeEmail"
+              placeholder="Please enter the email address of the teacher representative."
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              value={formik.values.schoolRepresentativePhone}
+              value={formik.values.teacherRepresentativeEmail}
               className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
             />
-            {formik.touched.schoolRepresentativePhone &&
-            formik.errors.schoolRepresentativePhone ? (
+            {formik.touched.teacherRepresentativeEmail &&
+            formik.errors.teacherRepresentativeEmail ? (
               <div className="-mt-3 text-red-600">
-                {formik.errors.schoolRepresentativePhone}
+                {formik.errors.teacherRepresentativeEmail}
               </div>
             ) : null}
 
             <label
               htmlFor="schoolRepresentativeEmail"
+              className="text-base md:text-xl font-bold"
+            >
+              Phone number - Teacher Representative
+            </label>
+            <input
+              id="teacherRepresentativePhone"
+              name="teacherRepresentativePhone"
+              type="teacherRepresentativePhone"
+              placeholder="Please enter the 10 digit phone number of the teacher representative."
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.teacherRepresentativePhone}
+              className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+            />
+            {formik.touched.teacherRepresentativePhone &&
+            formik.errors.teacherRepresentativePhone ? (
+              <div className="-mt-3 text-red-600">
+                {formik.errors.teacherRepresentativePhone}
+              </div>
+            ) : null}
+
+            <label
+              htmlFor="eventSelection"
               className="text-base md:text-xl font-bold"
             >
               Event Selection

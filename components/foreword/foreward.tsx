@@ -16,7 +16,7 @@ export default function Foreward() {
         kilometres away from our home. What we can conclude from this is that
         Mathematics has always been an indispensable factor towards the
         advancement of mankind. Furthermore, now it is an established fact that
-        the progress and achievements of a nation depends largely upon the
+        the progress and achievements of a nation depend largely upon the
         scientific and mathematical temperament of its populace.
         <br />
         <br />
