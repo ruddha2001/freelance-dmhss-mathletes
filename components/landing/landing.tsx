@@ -1,10 +1,20 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Landing() {
   return (
     <div className="h-screen bg-landing-background text-center">
+      <div className="flex justify-center mx-auto pt-10">
+        <Image
+          src="/mathletes.jpg"
+          height={200}
+          width={200}
+          className="block mx-auto "
+        />
+      </div>
+
       <p
-        className="text-secondary text-4xl md:text-7xl lg:text-9xl pt-16 md:pt-28 font-bold "
+        className="text-secondary text-4xl md:text-7xl lg:text-9xl pt-16 md:pt-20 font-bold "
         style={{ fontFamily: "Merriweather, serif" }}
       >
         Douglas Mathletes Meet 2021
@@ -15,7 +25,7 @@ export default function Landing() {
       >
         Maths around us: explore if you can
       </p>
-      <p className="text-white text-3xl md:text-7xl font-semibold mt-32 mb-16 md:mb-20">
+      <p className="text-white text-3xl md:text-7xl font-semibold mt-24 mb-12 md:mb-20">
         24 July to 25 July, 2021
       </p>
       <span

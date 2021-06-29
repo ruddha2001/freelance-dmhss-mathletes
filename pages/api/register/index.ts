@@ -1,8 +1,9 @@
 import nc from "next-connect";
 import type { NextApiRequest, NextApiResponse } from "next";
 import rateLimit from "express-rate-limit";
-import database from "./utilities/database";
-import { nanoid } from "nanoid";
+import database from "../utilities/database";
+import { customAlphabet } from "nanoid";
+const nanoid = customAlphabet("ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789", 8);
 
 const rateLimiter = rateLimit({
   windowMs: 1 * 60 * 1000,
@@ -41,7 +42,7 @@ const handler = nc<NextApiRequest, NextApiResponse>()
         let value = uniqueArray[index] as string;
         fileObject[value] = { photo: "", document: "" };
       }
-      nonEmptyObject["id"] = nanoid(8);
+      nonEmptyObject["id"] = nanoid();
 
       await (await database())
         .collection("registrations")

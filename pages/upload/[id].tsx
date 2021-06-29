@@ -10,6 +10,8 @@ export const getServerSideProps = async ({ query: { id } }) => {
     const res = await axios.get(`${process.env.BASE_URL}/api/upload/${id}`);
     const data = res.data.fileObject;
 
+    if (data[Object.keys(data)[0]] !== "")
+      throw Error("Documents are already uploaded.");
     return {
       props: {
         data,
@@ -20,7 +22,7 @@ export const getServerSideProps = async ({ query: { id } }) => {
     console.error(error);
     return {
       redirect: {
-        destination: "/500",
+        destination: "/",
         permanent: false,
       },
     };

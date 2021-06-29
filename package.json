@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aws-sdk": "^2.936.0",
     "axios": "^0.21.1",
     "express-rate-limit": "^5.2.6",
     "formik": "^2.2.9",
