@@ -20,9 +20,14 @@ const handler = nc<NextApiRequest, NextApiResponse>()
         let key = Object.keys(requestBody)[i];
         if (
           key !== "schoolName" &&
-          key !== "schoolRepresentativeName" &&
-          key !== "schoolRepresentativeEmail" &&
-          key !== "schoolRepresentativePhone" &&
+          key !== "schoolEmail" &&
+          key !== "schoolPrincipal" &&
+          key !== "studentRepresentativeName" &&
+          key !== "studentRepresentativeEmail" &&
+          key !== "studentRepresentativePhone" &&
+          key !== "teacherRepresentativeName" &&
+          key !== "teacherRepresentativeEmail" &&
+          key !== "teacherRepresentativePhone" &&
           key !== "checked" &&
           requestBody[key] !== ""
         )
@@ -34,7 +39,7 @@ const handler = nc<NextApiRequest, NextApiResponse>()
       let fileObject = {};
       for (let index in uniqueArray) {
         let value = uniqueArray[index] as string;
-        fileObject[value] = "";
+        fileObject[value] = { photo: "", document: "" };
       }
       nonEmptyObject["id"] = nanoid(8);
 
