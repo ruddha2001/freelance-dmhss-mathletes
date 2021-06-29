@@ -14,7 +14,8 @@ const faqData = [
   },
   {
     question: "What are the eligibility rules?",
-    answer: "The eligibility rules will be published very soon.",
+    answer:
+      "Please check the respective events to get the eligibility rules. General guidelines are provided in the registration page.",
   },
   {
     question: "Will there be any certificates?",

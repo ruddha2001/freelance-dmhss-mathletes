@@ -75,9 +75,9 @@ export default function CoordinatorContact() {
         </tr>
         <tr>
           <th className="border-2 border-black py-1">Event</th>
-          <th className="border-2 border-black py-1">CLASS VI - VIII</th>
-          <th className="border-2 border-black py-1">CLASS IX - X </th>
-          <th className="border-2 border-black py-1">CLASS XI - XII </th>
+          <th className="border-2 border-black py-1">Name</th>
+          <th className="border-2 border-black py-1">Phone</th>
+          <th className="border-2 border-black py-1">WhatsApp</th>
         </tr>
         <tr>
           <td className="border-2 border-black py-1">MAKING OF MATH</td>

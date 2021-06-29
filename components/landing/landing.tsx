@@ -14,7 +14,7 @@ export default function Landing() {
       </div>
 
       <p
-        className="text-secondary text-4xl md:text-7xl lg:text-9xl pt-16 md:pt-20 font-bold "
+        className="text-secondary text-4xl md:text-7xl lg:text-8xl pt-16 md:pt-20 font-bold "
         style={{ fontFamily: "Merriweather, serif" }}
       >
         Douglas Mathletes Meet 2021

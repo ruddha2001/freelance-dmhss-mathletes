@@ -26,6 +26,9 @@ export default function Registration() {
     "A student  cannot  participate in more than 4 events.",
     "The first three schools to register for DDMx  will be considered eligible to participate in the event.",
     "A school can participate in any number or combination of events.",
+    "Category 1 : Class 6-8",
+    "Category 2 : Class 9-10",
+    "Category 3 : Class 11-12",
     "For any kind of query during the online event, the participant may contact the Event  Coordinator.",
   ];
   const formik = useFormik({
@@ -42,34 +45,74 @@ export default function Registration() {
       checked: [],
       art1: "",
       art2: "",
-      shape1: "",
-      shape2: "",
-      languniv: "",
-      illustrator1: "",
-      illustrator2: "",
-      memers1: "",
-      memers2: "",
-      enigma1: "",
-      enigma2: "",
-      dmmx1: "",
-      dmmx2: "",
-      dmmx3: "",
-      jewel1: "",
-      jewel2: "",
-      making1: "",
-      making2: "",
-      sudoku1: "",
-      sudoku2: "",
+      shape1cat2: "",
+      shape2cat2: "",
+      shape1cat3: "",
+      shape2cat3: "",
+      languniv1cat2: "",
+      languniv2cat2: "",
+      languniv1cat3: "",
+      languniv2cat3: "",
+      illustrator1cat2: "",
+      illustrator2cat2: "",
+      illustrator1cat3: "",
+      illustrator2cat3: "",
+      memers1cat2: "",
+      memers2cat2: "",
+      memers1cat3: "",
+      memers2cat3: "",
+      enigma1cat2: "",
+      enigma2cat2: "",
+      enigma1cat3: "",
+      enigma2cat3: "",
+      dmmx1cat2: "",
+      dmmx2cat2: "",
+      dmmx3cat2: "",
+      dmmx1cat3: "",
+      dmmx2cat3: "",
+      dmmx3cat3: "",
+      jewel1cat2: "",
+      jewel2cat2: "",
+      jewel1cat3: "",
+      jewel2cat3: "",
+      making1cat1: "",
+      making2cat1: "",
+      making1cat2: "",
+      making2cat2: "",
+      making1cat3: "",
+      making2cat3: "",
+      sudoku1cat1: "",
+      sudoku2cat1: "",
+      sudoku1cat2: "",
+      sudoku2cat2: "",
+      sudoku1cat3: "",
+      sudoku2cat3: "",
       sustain1: "",
       sustain2: "",
-      mathathon1: "",
-      mathathon2: "",
-      mathathon3: "",
-      mathathon4: "",
-      cube1: "",
-      cube2: "",
-      quizzical1: "",
-      quizzical2: "",
+      mathathon1cat1: "",
+      mathathon2cat1: "",
+      mathathon3cat1: "",
+      mathathon4cat1: "",
+      mathathon1cat2: "",
+      mathathon2cat2: "",
+      mathathon3cat2: "",
+      mathathon4cat2: "",
+      mathathon1cat3: "",
+      mathathon2cat3: "",
+      mathathon3cat3: "",
+      mathathon4cat3: "",
+      cube1cat1: "",
+      cube2cat1: "",
+      cube1cat2: "",
+      cube2cat2: "",
+      cube1cat3: "",
+      cube2cat3: "",
+      quizzical1cat1: "",
+      quizzical2cat1: "",
+      quizzical1cat2: "",
+      quizzical2cat2: "",
+      quizzical1cat3: "",
+      quizzical2cat3: "",
       ninjas1: "",
       ninjas2: "",
     },
@@ -335,56 +378,134 @@ export default function Registration() {
               <span className="ml-3">Art Integration</span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="shape" />
-              <span className="ml-3">Shape Shakers</span>
+              <Field type="checkbox" name="checked" value="shapecat2" />
+              <span className="ml-3">Shape Shakers (Category 2)</span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="languniv" />
-              <span className="ml-3">Language of the Universe</span>
+              <Field type="checkbox" name="checked" value="shapecat3" />
+              <span className="ml-3">Shape Shakers (Category 3)</span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="illustrator" />
-              <span className="ml-3">Illustrator the Great </span>
+              <Field type="checkbox" name="checked" value="langunivcat2" />
+              <span className="ml-3">
+                Language of the Universe (Category 2)
+              </span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="memers" />
-              <span className="ml-3">Math Memers</span>
+              <Field type="checkbox" name="checked" value="langunivcat3" />
+              <span className="ml-3">
+                Language of the Universe (Category 3)
+              </span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="enigma" />
-              <span className="ml-3">Enigma</span>
+              <Field type="checkbox" name="checked" value="illustratorcat2" />
+              <span className="ml-3">Illustrator the Great (Category 2)</span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="dmmx" />
-              <span className="ml-3">DMMx</span>
+              <Field type="checkbox" name="checked" value="illustratorcat3" />
+              <span className="ml-3">Illustrator the Great (Category 3)</span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="jewel" />
-              <span className="ml-3">Jewel of the Flatland</span>
+              <Field type="checkbox" name="checked" value="memerscat2" />
+              <span className="ml-3">Math Memers (Category 2)</span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="making" />
-              <span className="ml-3">Making of Math</span>
+              <Field type="checkbox" name="checked" value="memerscat3" />
+              <span className="ml-3">Math Memers (Category 3)</span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="sudoku" />
-              <span className="ml-3">Sudoku Solvers</span>
+              <Field type="checkbox" name="checked" value="enigmacat2" />
+              <span className="ml-3">Enigma (Category 2)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="enigmacat3" />
+              <span className="ml-3">Enigma (Category 3)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="dmmxcat2" />
+              <span className="ml-3">DMMx (Category 2)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="dmmxcat3" />
+              <span className="ml-3">DMMx (Category 3)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="jewelcat2" />
+              <span className="ml-3">Jewel of the Flatland (Category 2)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="jewelcat3" />
+              <span className="ml-3">Jewel of the Flatland (Category 3)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="makingcat1" />
+              <span className="ml-3">Making of Math (Category 1)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="makingcat2" />
+              <span className="ml-3">Making of Math (Category 2)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="makingcat3" />
+              <span className="ml-3">Making of Math (Category 3)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="sudokucat1" />
+              <span className="ml-3">Sudoku Solvers (Category 1)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="sudokucat2" />
+              <span className="ml-3">Sudoku Solvers (Category 2)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="sudokucat3" />
+              <span className="ml-3">Sudoku Solvers (Category 3)</span>
             </label>
             <label className="block text-sm md:text-xl">
               <Field type="checkbox" name="checked" value="sustain" />
               <span className="ml-3">Math to Sustain</span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="mathathon" />
-              <span className="ml-3">Mathathon</span>
+              <Field type="checkbox" name="checked" value="mathathoncat1" />
+              <span className="ml-3">Mathathon (Category 1)</span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="cube" />
-              <span className="ml-3">Cube Maestro</span>
+              <Field type="checkbox" name="checked" value="mathathoncat2" />
+              <span className="ml-3">Mathathon (Category 2)</span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="quizzical" />
-              <span className="ml-3">Let&apos;s get Quizzical</span>
+              <Field type="checkbox" name="checked" value="mathathoncat3" />
+              <span className="ml-3">Mathathon (Category 3)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="cubecat1" />
+              <span className="ml-3">Cube Maestro (Category 1)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="cubecat2" />
+              <span className="ml-3">Cube Maestro (Category 2)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="cubecat3" />
+              <span className="ml-3">Cube Maestro (Category 3)</span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="quizzicalcat1" />
+              <span className="ml-3">
+                Let&apos;s get Quizzical (Category 1)
+              </span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="quizzicalcat2" />
+              <span className="ml-3">
+                Let&apos;s get Quizzical (Category 2)
+              </span>
+            </label>
+            <label className="block text-sm md:text-xl">
+              <Field type="checkbox" name="checked" value="quizzicalcat3" />
+              <span className="ml-3">
+                Let&apos;s get Quizzical (Category 3)
+              </span>
             </label>
             <label className="block text-sm md:text-xl">
               <Field type="checkbox" name="checked" value="ninjas" />
@@ -420,10 +541,10 @@ export default function Registration() {
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "shape") ? (
+            {formik.values.checked.find((value) => value === "shapecat2") ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
-                  Shape Shakers
+                  Shape Shakers (Category 2)
                 </label>
                 <input
                   id="shape1"
@@ -432,7 +553,7 @@ export default function Registration() {
                   placeholder="Shape Shakers - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.shape1}
+                  value={formik.values.shape1cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -443,16 +564,45 @@ export default function Registration() {
                   placeholder="Shake Shakers - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.shape2}
+                  value={formik.values.shape2cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                 />
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "languniv") ? (
+            {formik.values.checked.find((value) => value === "shapecat2") ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
-                  Language of the Universe
+                  Shape Shakers (Category 3)
+                </label>
+                <input
+                  id="shape1"
+                  name="shape1"
+                  type="text"
+                  placeholder="Shape Shakers - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.shape1cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="shape2"
+                  name="shape2"
+                  type="text"
+                  placeholder="Shake Shakers - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.shape2cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find((value) => value === "langunivcat2") ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Language of the Universe (Category 2)
                 </label>
                 <input
                   id="languniv"
@@ -461,17 +611,60 @@ export default function Registration() {
                   placeholder="Language of the Universe - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.languniv}
+                  value={formik.values.languniv1cat2}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="languniv"
+                  name="languniv"
+                  type="text"
+                  placeholder="Language of the Universe - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.languniv2cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "illustrator") ? (
+            {formik.values.checked.find((value) => value === "langunivcat3") ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
-                  Illustrator the Great
+                  Language of the Universe (Category 3)
+                </label>
+                <input
+                  id="languniv"
+                  name="languniv"
+                  type="text"
+                  placeholder="Language of the Universe - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.languniv1cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="languniv"
+                  name="languniv"
+                  type="text"
+                  placeholder="Language of the Universe - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.languniv2cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find(
+              (value) => value === "illustratorcat2"
+            ) ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Illustrator the Great (Category 2)
                 </label>
                 <input
                   id="illustrator1"
@@ -480,7 +673,7 @@ export default function Registration() {
                   placeholder="Illustrator the Great - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.illustrator1}
+                  value={formik.values.illustrator1cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -491,16 +684,47 @@ export default function Registration() {
                   placeholder="Illustrator the Great - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.illustrator2}
+                  value={formik.values.illustrator2cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                 />
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "memers") ? (
+            {formik.values.checked.find(
+              (value) => value === "illustratorcat3"
+            ) ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
-                  Math Memers
+                  Illustrator the Great (Category 3)
+                </label>
+                <input
+                  id="illustrator1"
+                  name="illustrator1"
+                  type="text"
+                  placeholder="Illustrator the Great - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.illustrator1cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="illustrator2"
+                  name="illustrator2"
+                  type="text"
+                  placeholder="Illustrator the Great - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.illustrator2cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find((value) => value === "memerscat2") ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Math Memers (Category 2)
                 </label>
                 <input
                   id="memers1"
@@ -509,7 +733,7 @@ export default function Registration() {
                   placeholder="Math Memers - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.memers1}
+                  value={formik.values.memers1cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -520,15 +744,46 @@ export default function Registration() {
                   placeholder="Math Memers - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.memers2}
+                  value={formik.values.memers2cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                 />
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "enigma") ? (
+            {formik.values.checked.find((value) => value === "memerscat3") ? (
               <div className="pt-5">
-                <label className="text-base md:text-xl font-bold">Enigma</label>
+                <label className="text-base md:text-xl font-bold">
+                  Math Memers (Category 3)
+                </label>
+                <input
+                  id="memers1"
+                  name="memers1"
+                  type="text"
+                  placeholder="Math Memers - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.memers1cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="memers2"
+                  name="memers2"
+                  type="text"
+                  placeholder="Math Memers - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.memers2cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find((value) => value === "enigmacat2") ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Enigma (Category 2)
+                </label>
                 <input
                   id="enigma1"
                   name="enigma1"
@@ -536,7 +791,7 @@ export default function Registration() {
                   placeholder="Math Memers - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.enigma1}
+                  value={formik.values.enigma1cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -547,16 +802,48 @@ export default function Registration() {
                   placeholder="Math Memers - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.enigma2}
+                  value={formik.values.enigma2cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "dmmx") ? (
+            {formik.values.checked.find((value) => value === "enigmacat3") ? (
               <div className="pt-5">
-                <label className="text-base md:text-xl font-bold">DMMx</label>
+                <label className="text-base md:text-xl font-bold">
+                  Enigma (Category 3)
+                </label>
+                <input
+                  id="enigma1"
+                  name="enigma1"
+                  type="text"
+                  placeholder="Math Memers - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.enigma1cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="enigma2"
+                  name="enigma2"
+                  type="text"
+                  placeholder="Math Memers - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.enigma2cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find((value) => value === "dmmxcat2") ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  DMMx (Category 2)
+                </label>
                 <input
                   id="dmmx1"
                   name="dmmx1"
@@ -564,7 +851,7 @@ export default function Registration() {
                   placeholder="DMMx - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.dmmx1}
+                  value={formik.values.dmmx1cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -575,7 +862,7 @@ export default function Registration() {
                   placeholder="DMMx - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.dmmx2}
+                  value={formik.values.dmmx2cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -586,17 +873,58 @@ export default function Registration() {
                   placeholder="DMMx - Participant 3"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.dmmx3}
+                  value={formik.values.dmmx3cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "jewel") ? (
+            {formik.values.checked.find((value) => value === "dmmxcat3") ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
-                  Jewel of the Flatland
+                  DMMx (Category 3)
+                </label>
+                <input
+                  id="dmmx1"
+                  name="dmmx1"
+                  type="text"
+                  placeholder="DMMx - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.dmmx1cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="dmmx2"
+                  name="dmmx2"
+                  type="text"
+                  placeholder="DMMx - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.dmmx2cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="dmmx3"
+                  name="dmmx3"
+                  type="text"
+                  placeholder="DMMx - Participant 3"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.dmmx3cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find((value) => value === "jewelcat2") ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Jewel of the Flatland (Category 2)
                 </label>
                 <input
                   id="jewel1"
@@ -605,7 +933,7 @@ export default function Registration() {
                   placeholder="Jewel of the Flatland - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.jewel1}
+                  value={formik.values.jewel1cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -616,17 +944,47 @@ export default function Registration() {
                   placeholder="Jewel of the Flatland - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.jewel2}
+                  value={formik.values.jewel2cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "making") ? (
+            {formik.values.checked.find((value) => value === "jewelcat3") ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
-                  Making of Math
+                  Jewel of the Flatland (Category 3)
+                </label>
+                <input
+                  id="jewel1"
+                  name="jewel1"
+                  type="text"
+                  placeholder="Jewel of the Flatland - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.jewel1cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="jewel2"
+                  name="jewel2"
+                  type="text"
+                  placeholder="Jewel of the Flatland - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.jewel2cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find((value) => value === "makingcat1") ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Making of Math (Category 1)
                 </label>
                 <input
                   id="making1"
@@ -635,7 +993,7 @@ export default function Registration() {
                   placeholder="Making of Math - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.making1}
+                  value={formik.values.making1cat1}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -646,16 +1004,74 @@ export default function Registration() {
                   placeholder="Making of Math - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.making2}
+                  value={formik.values.making2cat1}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                 />
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "sudoku") ? (
+            {formik.values.checked.find((value) => value === "makingcat2") ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
-                  Sudoku Solvers
+                  Making of Math (Category 2)
+                </label>
+                <input
+                  id="making1"
+                  name="making1"
+                  type="text"
+                  placeholder="Making of Math - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.making1cat2}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="making2"
+                  name="making2"
+                  type="text"
+                  placeholder="Making of Math - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.making2cat2}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find((value) => value === "makingcat3") ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Making of Math (Category 3)
+                </label>
+                <input
+                  id="making1"
+                  name="making1"
+                  type="text"
+                  placeholder="Making of Math - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.making1cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="making2"
+                  name="making2"
+                  type="text"
+                  placeholder="Making of Math - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.making2cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find((value) => value === "sudokucat1") ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Sudoku Solvers (Category 1)
                 </label>
                 <input
                   id="sudoku1"
@@ -664,7 +1080,7 @@ export default function Registration() {
                   placeholder="Sudoku Solvers - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.sudoku1}
+                  value={formik.values.sudoku1cat1}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -675,7 +1091,67 @@ export default function Registration() {
                   placeholder="Sudoku Solvers - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.sudoku2}
+                  value={formik.values.sudoku2cat1}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find((value) => value === "sudokucat2") ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Sudoku Solvers (Category 2)
+                </label>
+                <input
+                  id="sudoku1"
+                  name="sudoku1"
+                  type="text"
+                  placeholder="Sudoku Solvers - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.sudoku1cat2}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="sudoku2"
+                  name="sudoku2"
+                  type="text"
+                  placeholder="Sudoku Solvers - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.sudoku2cat2}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find((value) => value === "sudokucat3") ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Sudoku Solvers (Category 3)
+                </label>
+                <input
+                  id="sudoku1"
+                  name="sudoku1"
+                  type="text"
+                  placeholder="Sudoku Solvers - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.sudoku1cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="sudoku2"
+                  name="sudoku2"
+                  type="text"
+                  placeholder="Sudoku Solvers - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.sudoku2cat3}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -712,10 +1188,12 @@ export default function Registration() {
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "mathathon") ? (
+            {formik.values.checked.find(
+              (value) => value === "mathathoncat1"
+            ) ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
-                  Mathathon
+                  Mathathon (Category 1)
                 </label>
                 <input
                   id="mathathon1"
@@ -724,7 +1202,7 @@ export default function Registration() {
                   placeholder="Mathathon - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.mathathon1}
+                  value={formik.values.mathathon1cat1}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -735,7 +1213,7 @@ export default function Registration() {
                   placeholder="Mathathon - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.mathathon2}
+                  value={formik.values.mathathon2cat1}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -746,7 +1224,7 @@ export default function Registration() {
                   placeholder="Mathathon - Participant 3"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.mathathon3}
+                  value={formik.values.mathathon3cat1}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -757,17 +1235,125 @@ export default function Registration() {
                   placeholder="Mathathon - Participant 4"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.mathathon4}
+                  value={formik.values.mathathon4cat1}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "cube") ? (
+            {formik.values.checked.find(
+              (value) => value === "mathathoncat2"
+            ) ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
-                  Cube Maestro
+                  Mathathon (Category 2)
+                </label>
+                <input
+                  id="mathathon1"
+                  name="mathathon1"
+                  type="text"
+                  placeholder="Mathathon - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.mathathon1cat2}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="mathathon2"
+                  name="mathathon2"
+                  type="text"
+                  placeholder="Mathathon - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.mathathon2cat2}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="mathathon3"
+                  name="mathathon3"
+                  type="text"
+                  placeholder="Mathathon - Participant 3"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.mathathon3cat2}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="mathathon4"
+                  name="mathathon4"
+                  type="text"
+                  placeholder="Mathathon - Participant 4"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.mathathon4cat1}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find(
+              (value) => value === "mathathoncat3"
+            ) ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Mathathon (Category 3)
+                </label>
+                <input
+                  id="mathathon1"
+                  name="mathathon1"
+                  type="text"
+                  placeholder="Mathathon - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.mathathon1cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="mathathon2"
+                  name="mathathon2"
+                  type="text"
+                  placeholder="Mathathon - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.mathathon2cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="mathathon3"
+                  name="mathathon3"
+                  type="text"
+                  placeholder="Mathathon - Participant 3"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.mathathon3cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="mathathon4"
+                  name="mathathon4"
+                  type="text"
+                  placeholder="Mathathon - Participant 4"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.mathathon4cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find((value) => value === "cubecat1") ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Cube Maestro (Category 1)
                 </label>
                 <input
                   id="cube1"
@@ -776,7 +1362,7 @@ export default function Registration() {
                   placeholder="Cube Maestro - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.cube1}
+                  value={formik.values.cube1cat1}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -787,17 +1373,79 @@ export default function Registration() {
                   placeholder="Cube Maestro - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.cube2}
+                  value={formik.values.cube2cat1}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "quizzical") ? (
+            {formik.values.checked.find((value) => value === "cubecat2") ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
-                  Let&apos;s get Quizzical
+                  Cube Maestro (Category 2)
+                </label>
+                <input
+                  id="cube1"
+                  name="cube1"
+                  type="text"
+                  placeholder="Cube Maestro - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.cube1cat2}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="cube2"
+                  name="cube2"
+                  type="text"
+                  placeholder="Cube Maestro - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.cube2cat2}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find((value) => value === "cubecat3") ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Cube Maestro (Category 3)
+                </label>
+                <input
+                  id="cube1"
+                  name="cube1"
+                  type="text"
+                  placeholder="Cube Maestro - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.cube1cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="cube2"
+                  name="cube2"
+                  type="text"
+                  placeholder="Cube Maestro - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.cube2cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find(
+              (value) => value === "quizzicalcat1"
+            ) ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Let&apos;s get Quizzical (Category 1)
                 </label>
                 <input
                   id="cube1"
@@ -806,7 +1454,7 @@ export default function Registration() {
                   placeholder="Let's get Quizzical - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.cube1}
+                  value={formik.values.quizzical1cat1}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -817,7 +1465,71 @@ export default function Registration() {
                   placeholder="Let's get Quizzical - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.cube2}
+                  value={formik.values.quizzical2cat1}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find(
+              (value) => value === "quizzicalcat2"
+            ) ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Let&apos;s get Quizzical (Category 2)
+                </label>
+                <input
+                  id="cube1"
+                  name="cube1"
+                  type="text"
+                  placeholder="Let's get Quizzical - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.quizzical1cat2}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="cube2"
+                  name="cube2"
+                  type="text"
+                  placeholder="Let's get Quizzical - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.quizzical2cat2}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+              </div>
+            ) : null}
+
+            {formik.values.checked.find(
+              (value) => value === "quizzicalcat3"
+            ) ? (
+              <div className="pt-5">
+                <label className="text-base md:text-xl font-bold">
+                  Let&apos;s get Quizzical (Category 3)
+                </label>
+                <input
+                  id="cube1"
+                  name="cube1"
+                  type="text"
+                  placeholder="Let's get Quizzical - Participant 1"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.quizzical1cat3}
+                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
+                  required
+                />
+                <input
+                  id="cube2"
+                  name="cube2"
+                  type="text"
+                  placeholder="Let's get Quizzical - Participant 2"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.quizzical2cat3}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
@@ -847,7 +1559,7 @@ export default function Registration() {
                   placeholder="Number Ninjas - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.cube2}
+                  value={formik.values.ninjas2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                 />
               </div>
