@@ -40,7 +40,7 @@ const handler = nc<NextApiRequest, NextApiResponse>()
       let fileObject = {};
       for (let index in uniqueArray) {
         let value = uniqueArray[index] as string;
-        fileObject[value] = { photo: "", document: "" };
+        fileObject[value] = { photo: "", proof: "" };
       }
       nonEmptyObject["id"] = nanoid();
 
