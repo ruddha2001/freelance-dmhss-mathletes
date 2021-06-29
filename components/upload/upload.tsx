@@ -5,6 +5,8 @@ export default function UploadFile({ fileObject, id }) {
   const [error, setError] = useState(
     "An unknown error has occured. Please re-try, or contact us if the error persists."
   );
+  const [uploadFile, setUploadFile] = useState(0);
+  const [totalUploadFile, setTotalUploadFile] = useState(0);
   const handleSubmission = async () => {
     document.getElementById("error").style.display = "none";
     document.getElementById("submit-button").innerText = "Please Wait";
@@ -13,6 +15,8 @@ export default function UploadFile({ fileObject, id }) {
     try {
       let finalUrlArray = [];
       const inputElement = document.getElementsByTagName("input");
+      setTotalUploadFile(inputElement.length - 1);
+      document.getElementById("uploading").style.display = "block";
       for (let i = 0; i < inputElement.length; i++) {
         if (inputElement[i].files) {
           const file = inputElement[i].files[0];
@@ -28,6 +32,7 @@ export default function UploadFile({ fileObject, id }) {
             };
           }
 
+          setUploadFile(uploadFile + 1);
           const res = await axios.post(
             "/api/upload",
             { fileName: file.name },
@@ -112,6 +117,14 @@ export default function UploadFile({ fileObject, id }) {
           >
             Submit
           </button>
+          <p
+            className="text-center text-black"
+            id="uploading"
+            style={{ display: "none" }}
+          >
+            This process might take sometime, depending on your file size and
+            internet connection.
+          </p>
           <p
             className="text-center text-red-600"
             id="error"
