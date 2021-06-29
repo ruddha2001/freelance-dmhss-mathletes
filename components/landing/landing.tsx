@@ -36,7 +36,7 @@ export default function Landing() {
       >
         Register Now
       </span>
-      <p className="text-center text-white mt-36 text-base md:text-xl animate-bounce">
+      {/* <p className="text-center text-white mt-36 text-base md:text-xl animate-bounce hidden">
         Scroll down to learn more
         <svg
           className="inline-block ml-2"
@@ -59,7 +59,7 @@ export default function Landing() {
             strokeLinejoin="round"
           />
         </svg>
-      </p>
+      </p> */}
     </div>
   );
 }
