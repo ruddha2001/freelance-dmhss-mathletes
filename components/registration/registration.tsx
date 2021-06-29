@@ -2,25 +2,27 @@ import React from "react";
 import { useFormik, Field, FormikProvider } from "formik";
 import { formSchema } from "./form.schema";
 import axios from "axios";
+import Link from "next/link";
 
 export default function Registration() {
   const guidelines = [
     "Participants must attend the Inter school Mathematics fest, Mathletes 2021 in their school uniform.",
     "Participants must provide their Aadhar cards/ birth certificates  or  bonafide certificates issued from their schools.",
     "The host school will not be held responsible for any kind of technical glitch faced by the participating school  during the event.",
+    "An alternative arrangement will be made by the host school if it faces any technical glitch.",
     "Cameras should be appropriately placed during all the online events.",
     "Resorting to the use of unfair means will lead to the disqualification of the participants.",
-    "An alternative arrangement will be made by the host school if it faces any technical glitch.",
     "The presence of any other person in the frame during the event will not be encouraged.",
     "The presence of the participant through out  the event is mandatory.",
-    "Unique registration number will be provided to each participant.",
     "No verbal communication with anyone is allowed during the live events.",
     "The schedule and the timings of the events are subject to change.",
     "All decisions of the judges will be considered final and abiding.",
     "Participants  must make all arrangements of their stationeries.",
+    "Participants have to display their materials  before the invigilators.",
+    "Unique registration number will be provided to each participant.",
+    "Participants must write their unique registration number in place of their name before starting the Zoom meeting.",
     "Participants  are advised to join the Zoom meeting at least 5 to 6 minutes prior to their scheduled time.",
     "Participants should introduce themselves at the onset of the events using their Unique Registration number.",
-    "Participants   have to display their materials  before the invigilators.",
     "A student  cannot  participate in more than 4 events.",
     "The first three schools to register for DDMx  will be considered eligible to participate in the event.",
     "A school can participate in any number or combination of events.",
@@ -93,14 +95,18 @@ export default function Registration() {
         <p className="text-4xl mb-10 font-bold">
           DMHSS Mathletes Meet - Registration
         </p>
-        <p className="text-sm md:text-xl">
-          By registering for DMHSS Mathletes Meet, you agree to abide by the
-          following general guidelines:
-          <ul style={{ listStyleType: "disc" }} className="pl-5 mt-3 mb-10">
+        <p className="text-sm md:text-xl mb-10">
+          <span className="font-bold underline">General Guidelines</span>
+          <ul style={{ listStyleType: "disc" }} className="pl-5 mt-3">
             {guidelines.map((guideline, index) => (
               <li key={index}>{guideline}</li>
             ))}
           </ul>
+          <p className="mt-3 cursor-pointer">
+            <Link href="/coordinators">
+              <a>Please find the Event Coordinators by clicking here.</a>
+            </Link>
+          </p>
         </p>
         <FormikProvider value={formik}>
           <form onSubmit={formik.handleSubmit}>

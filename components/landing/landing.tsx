@@ -4,10 +4,10 @@ export default function Landing() {
   return (
     <div className="h-screen bg-landing-background text-center">
       <p
-        className="text-secondary text-4xl md:text-7xl lg:text-9xl pt-16 md:pt-28"
-        style={{ fontFamily: "Pacifico, sans-serif" }}
+        className="text-secondary text-4xl md:text-7xl lg:text-9xl pt-16 md:pt-28 font-bold "
+        style={{ fontFamily: "Merriweather, serif" }}
       >
-        DMHSS Mathletes Meet
+        Douglas Mathletes Meet 2021
       </p>
       <p
         className="text-white mt-5 text-xl md:text-5xl"
