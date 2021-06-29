@@ -20,7 +20,7 @@ export default function Registration() {
     "Participants  must make all arrangements of their stationeries.",
     "Participants have to display their materials  before the invigilators.",
     "Unique registration number will be provided to each participant.",
-    "Participants must write their unique registration number in place of their name before starting the Zoom meeting.",
+    "Participants will enter the Zoom meeting with their Unique Registration No. highlighted and not their names.",
     "Participants  are advised to join the Zoom meeting at least 5 to 6 minutes prior to their scheduled time.",
     "Participants should introduce themselves at the onset of the events using their Unique Registration number.",
     "A student  cannot  participate in more than 4 events.",
