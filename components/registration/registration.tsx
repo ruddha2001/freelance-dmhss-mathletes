@@ -547,8 +547,8 @@ export default function Registration() {
                   Shape Shakers (Category 2)
                 </label>
                 <input
-                  id="shape1"
-                  name="shape1"
+                  id="shape1cat2"
+                  name="shape1cat2"
                   type="text"
                   placeholder="Shape Shakers - Participant 1"
                   onChange={formik.handleChange}
@@ -558,8 +558,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="shape2"
-                  name="shape2"
+                  id="shape2cat2"
+                  name="shape2cat2"
                   type="text"
                   placeholder="Shake Shakers - Participant 2"
                   onChange={formik.handleChange}
@@ -576,8 +576,8 @@ export default function Registration() {
                   Shape Shakers (Category 3)
                 </label>
                 <input
-                  id="shape1"
-                  name="shape1"
+                  id="shape1cat3"
+                  name="shape1cat3"
                   type="text"
                   placeholder="Shape Shakers - Participant 1"
                   onChange={formik.handleChange}
@@ -587,8 +587,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="shape2"
-                  name="shape2"
+                  id="shape2cat3"
+                  name="shape2cat3"
                   type="text"
                   placeholder="Shake Shakers - Participant 2"
                   onChange={formik.handleChange}
@@ -605,8 +605,8 @@ export default function Registration() {
                   Language of the Universe (Category 2)
                 </label>
                 <input
-                  id="languniv"
-                  name="languniv"
+                  id="languniv1cat2"
+                  name="languniv1cat2"
                   type="text"
                   placeholder="Language of the Universe - Participant 1"
                   onChange={formik.handleChange}
@@ -616,8 +616,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="languniv"
-                  name="languniv"
+                  id="languniv2cat2"
+                  name="languniv2cat2"
                   type="text"
                   placeholder="Language of the Universe - Participant 2"
                   onChange={formik.handleChange}
@@ -635,8 +635,8 @@ export default function Registration() {
                   Language of the Universe (Category 3)
                 </label>
                 <input
-                  id="languniv"
-                  name="languniv"
+                  id="languniv1cat3"
+                  name="languniv1cat3"
                   type="text"
                   placeholder="Language of the Universe - Participant 1"
                   onChange={formik.handleChange}
@@ -646,8 +646,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="languniv"
-                  name="languniv"
+                  id="languniv2cat3"
+                  name="languniv2cat3"
                   type="text"
                   placeholder="Language of the Universe - Participant 2"
                   onChange={formik.handleChange}
@@ -667,8 +667,8 @@ export default function Registration() {
                   Illustrator the Great (Category 2)
                 </label>
                 <input
-                  id="illustrator1"
-                  name="illustrator1"
+                  id="illustrator1cat2"
+                  name="illustrator1cat2"
                   type="text"
                   placeholder="Illustrator the Great - Participant 1"
                   onChange={formik.handleChange}
@@ -678,8 +678,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="illustrator2"
-                  name="illustrator2"
+                  id="illustrator2cat2"
+                  name="illustrator2cat2"
                   type="text"
                   placeholder="Illustrator the Great - Participant 2"
                   onChange={formik.handleChange}
@@ -698,8 +698,8 @@ export default function Registration() {
                   Illustrator the Great (Category 3)
                 </label>
                 <input
-                  id="illustrator1"
-                  name="illustrator1"
+                  id="illustrator1cat3"
+                  name="illustrator1cat3"
                   type="text"
                   placeholder="Illustrator the Great - Participant 1"
                   onChange={formik.handleChange}
@@ -709,8 +709,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="illustrator2"
-                  name="illustrator2"
+                  id="illustrator2cat3"
+                  name="illustrator2cat3"
                   type="text"
                   placeholder="Illustrator the Great - Participant 2"
                   onChange={formik.handleChange}
@@ -727,8 +727,8 @@ export default function Registration() {
                   Math Memers (Category 2)
                 </label>
                 <input
-                  id="memers1"
-                  name="memers1"
+                  id="memers1cat2"
+                  name="memers1cat2"
                   type="text"
                   placeholder="Math Memers - Participant 1"
                   onChange={formik.handleChange}
@@ -738,8 +738,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="memers2"
-                  name="memers2"
+                  id="memers2cat2"
+                  name="memers2cat2"
                   type="text"
                   placeholder="Math Memers - Participant 2"
                   onChange={formik.handleChange}
@@ -756,8 +756,8 @@ export default function Registration() {
                   Math Memers (Category 3)
                 </label>
                 <input
-                  id="memers1"
-                  name="memers1"
+                  id="memers1cat3"
+                  name="memers1cat3"
                   type="text"
                   placeholder="Math Memers - Participant 1"
                   onChange={formik.handleChange}
@@ -767,8 +767,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="memers2"
-                  name="memers2"
+                  id="memers2cat3"
+                  name="memers2cat3"
                   type="text"
                   placeholder="Math Memers - Participant 2"
                   onChange={formik.handleChange}
@@ -785,8 +785,8 @@ export default function Registration() {
                   Enigma (Category 2)
                 </label>
                 <input
-                  id="enigma1"
-                  name="enigma1"
+                  id="enigma1cat2"
+                  name="enigma1cat2"
                   type="text"
                   placeholder="Math Memers - Participant 1"
                   onChange={formik.handleChange}
@@ -796,8 +796,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="enigma2"
-                  name="enigma2"
+                  id="enigma2cat2"
+                  name="enigma2cat2"
                   type="text"
                   placeholder="Math Memers - Participant 2"
                   onChange={formik.handleChange}
@@ -815,8 +815,8 @@ export default function Registration() {
                   Enigma (Category 3)
                 </label>
                 <input
-                  id="enigma1"
-                  name="enigma1"
+                  id="enigma1cat3"
+                  name="enigma1cat3"
                   type="text"
                   placeholder="Math Memers - Participant 1"
                   onChange={formik.handleChange}
@@ -826,8 +826,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="enigma2"
-                  name="enigma2"
+                  id="enigma2cat3"
+                  name="enigma2cat3"
                   type="text"
                   placeholder="Math Memers - Participant 2"
                   onChange={formik.handleChange}
@@ -845,8 +845,8 @@ export default function Registration() {
                   DMMx (Category 2)
                 </label>
                 <input
-                  id="dmmx1"
-                  name="dmmx1"
+                  id="dmmx1cat2"
+                  name="dmmx1cat2"
                   type="text"
                   placeholder="DMMx - Participant 1"
                   onChange={formik.handleChange}
@@ -856,8 +856,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="dmmx2"
-                  name="dmmx2"
+                  id="dmmx2cat2"
+                  name="dmmx2cat2"
                   type="text"
                   placeholder="DMMx - Participant 2"
                   onChange={formik.handleChange}
@@ -867,8 +867,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="dmmx3"
-                  name="dmmx3"
+                  id="dmmx3cat2"
+                  name="dmmx3cat2"
                   type="text"
                   placeholder="DMMx - Participant 3"
                   onChange={formik.handleChange}
@@ -886,8 +886,8 @@ export default function Registration() {
                   DMMx (Category 3)
                 </label>
                 <input
-                  id="dmmx1"
-                  name="dmmx1"
+                  id="dmmx1cat3"
+                  name="dmmx1cat3"
                   type="text"
                   placeholder="DMMx - Participant 1"
                   onChange={formik.handleChange}
@@ -897,8 +897,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="dmmx2"
-                  name="dmmx2"
+                  id="dmmx2cat3"
+                  name="dmmx2cat3"
                   type="text"
                   placeholder="DMMx - Participant 2"
                   onChange={formik.handleChange}
@@ -908,8 +908,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="dmmx3"
-                  name="dmmx3"
+                  id="dmmx3cat3"
+                  name="dmmx3cat3"
                   type="text"
                   placeholder="DMMx - Participant 3"
                   onChange={formik.handleChange}
@@ -927,8 +927,8 @@ export default function Registration() {
                   Jewel of the Flatland (Category 2)
                 </label>
                 <input
-                  id="jewel1"
-                  name="jewel1"
+                  id="jewel1cat2"
+                  name="jewel1cat2"
                   type="text"
                   placeholder="Jewel of the Flatland - Participant 1"
                   onChange={formik.handleChange}
@@ -938,8 +938,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="jewel2"
-                  name="jewel2"
+                  id="jewel2cat2"
+                  name="jewel2cat2"
                   type="text"
                   placeholder="Jewel of the Flatland - Participant 2"
                   onChange={formik.handleChange}
@@ -957,8 +957,8 @@ export default function Registration() {
                   Jewel of the Flatland (Category 3)
                 </label>
                 <input
-                  id="jewel1"
-                  name="jewel1"
+                  id="jewel1cat3"
+                  name="jewel1cat3"
                   type="text"
                   placeholder="Jewel of the Flatland - Participant 1"
                   onChange={formik.handleChange}
@@ -968,8 +968,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="jewel2"
-                  name="jewel2"
+                  id="jewel2cat3"
+                  name="jewel2cat3"
                   type="text"
                   placeholder="Jewel of the Flatland - Participant 2"
                   onChange={formik.handleChange}
@@ -987,8 +987,8 @@ export default function Registration() {
                   Making of Math (Category 1)
                 </label>
                 <input
-                  id="making1"
-                  name="making1"
+                  id="making1cat1"
+                  name="making1cat1"
                   type="text"
                   placeholder="Making of Math - Participant 1"
                   onChange={formik.handleChange}
@@ -998,8 +998,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="making2"
-                  name="making2"
+                  id="making2cat1"
+                  name="making2cat1"
                   type="text"
                   placeholder="Making of Math - Participant 2"
                   onChange={formik.handleChange}
@@ -1016,8 +1016,8 @@ export default function Registration() {
                   Making of Math (Category 2)
                 </label>
                 <input
-                  id="making1"
-                  name="making1"
+                  id="making1cat2"
+                  name="making1cat2"
                   type="text"
                   placeholder="Making of Math - Participant 1"
                   onChange={formik.handleChange}
@@ -1027,8 +1027,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="making2"
-                  name="making2"
+                  id="making2cat2"
+                  name="making2cat2"
                   type="text"
                   placeholder="Making of Math - Participant 2"
                   onChange={formik.handleChange}
@@ -1045,8 +1045,8 @@ export default function Registration() {
                   Making of Math (Category 3)
                 </label>
                 <input
-                  id="making1"
-                  name="making1"
+                  id="making1cat3"
+                  name="making1cat3"
                   type="text"
                   placeholder="Making of Math - Participant 1"
                   onChange={formik.handleChange}
@@ -1056,8 +1056,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="making2"
-                  name="making2"
+                  id="making2cat3"
+                  name="making2cat3"
                   type="text"
                   placeholder="Making of Math - Participant 2"
                   onChange={formik.handleChange}
@@ -1074,8 +1074,8 @@ export default function Registration() {
                   Sudoku Solvers (Category 1)
                 </label>
                 <input
-                  id="sudoku1"
-                  name="sudoku1"
+                  id="sudoku1cat1"
+                  name="sudoku1cat1"
                   type="text"
                   placeholder="Sudoku Solvers - Participant 1"
                   onChange={formik.handleChange}
@@ -1085,8 +1085,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="sudoku2"
-                  name="sudoku2"
+                  id="sudoku2cat1"
+                  name="sudoku2cat1"
                   type="text"
                   placeholder="Sudoku Solvers - Participant 2"
                   onChange={formik.handleChange}
@@ -1104,8 +1104,8 @@ export default function Registration() {
                   Sudoku Solvers (Category 2)
                 </label>
                 <input
-                  id="sudoku1"
-                  name="sudoku1"
+                  id="sudoku1cat2"
+                  name="sudoku1cat2"
                   type="text"
                   placeholder="Sudoku Solvers - Participant 1"
                   onChange={formik.handleChange}
@@ -1115,8 +1115,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="sudoku2"
-                  name="sudoku2"
+                  id="sudoku2cat2"
+                  name="sudoku2cat2"
                   type="text"
                   placeholder="Sudoku Solvers - Participant 2"
                   onChange={formik.handleChange}
@@ -1134,8 +1134,8 @@ export default function Registration() {
                   Sudoku Solvers (Category 3)
                 </label>
                 <input
-                  id="sudoku1"
-                  name="sudoku1"
+                  id="sudoku1cat3"
+                  name="sudoku1cat3"
                   type="text"
                   placeholder="Sudoku Solvers - Participant 1"
                   onChange={formik.handleChange}
@@ -1145,8 +1145,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="sudoku2"
-                  name="sudoku2"
+                  id="sudoku2cat3"
+                  name="sudoku2cat3"
                   type="text"
                   placeholder="Sudoku Solvers - Participant 2"
                   onChange={formik.handleChange}
@@ -1196,8 +1196,8 @@ export default function Registration() {
                   Mathathon (Category 1)
                 </label>
                 <input
-                  id="mathathon1"
-                  name="mathathon1"
+                  id="mathathon1cat1"
+                  name="mathathon1cat1"
                   type="text"
                   placeholder="Mathathon - Participant 1"
                   onChange={formik.handleChange}
@@ -1207,8 +1207,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="mathathon2"
-                  name="mathathon2"
+                  id="mathathon2cat1"
+                  name="mathathon2cat1"
                   type="text"
                   placeholder="Mathathon - Participant 2"
                   onChange={formik.handleChange}
@@ -1218,8 +1218,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="mathathon3"
-                  name="mathathon3"
+                  id="mathathon3cat1"
+                  name="mathathon3cat1"
                   type="text"
                   placeholder="Mathathon - Participant 3"
                   onChange={formik.handleChange}
@@ -1229,8 +1229,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="mathathon4"
-                  name="mathathon4"
+                  id="mathathon4cat1"
+                  name="mathathon4cat1"
                   type="text"
                   placeholder="Mathathon - Participant 4"
                   onChange={formik.handleChange}
@@ -1250,8 +1250,8 @@ export default function Registration() {
                   Mathathon (Category 2)
                 </label>
                 <input
-                  id="mathathon1"
-                  name="mathathon1"
+                  id="mathathon1cat2"
+                  name="mathathon1cat2"
                   type="text"
                   placeholder="Mathathon - Participant 1"
                   onChange={formik.handleChange}
@@ -1261,8 +1261,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="mathathon2"
-                  name="mathathon2"
+                  id="mathathon2cat2"
+                  name="mathathon2cat2"
                   type="text"
                   placeholder="Mathathon - Participant 2"
                   onChange={formik.handleChange}
@@ -1272,8 +1272,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="mathathon3"
-                  name="mathathon3"
+                  id="mathathon3cat2"
+                  name="mathathon3cat2"
                   type="text"
                   placeholder="Mathathon - Participant 3"
                   onChange={formik.handleChange}
@@ -1283,8 +1283,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="mathathon4"
-                  name="mathathon4"
+                  id="mathathon4cat1"
+                  name="mathathon4cat1"
                   type="text"
                   placeholder="Mathathon - Participant 4"
                   onChange={formik.handleChange}
@@ -1304,8 +1304,8 @@ export default function Registration() {
                   Mathathon (Category 3)
                 </label>
                 <input
-                  id="mathathon1"
-                  name="mathathon1"
+                  id="mathathon1cat3"
+                  name="mathathon1cat3"
                   type="text"
                   placeholder="Mathathon - Participant 1"
                   onChange={formik.handleChange}
@@ -1315,8 +1315,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="mathathon2"
-                  name="mathathon2"
+                  id="mathathon2cat3"
+                  name="mathathon2cat3"
                   type="text"
                   placeholder="Mathathon - Participant 2"
                   onChange={formik.handleChange}
@@ -1326,8 +1326,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="mathathon3"
-                  name="mathathon3"
+                  id="mathathon3cat3"
+                  name="mathathon3cat3"
                   type="text"
                   placeholder="Mathathon - Participant 3"
                   onChange={formik.handleChange}
@@ -1337,8 +1337,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="mathathon4"
-                  name="mathathon4"
+                  id="mathathon4cat3"
+                  name="mathathon4cat3"
                   type="text"
                   placeholder="Mathathon - Participant 4"
                   onChange={formik.handleChange}
@@ -1356,8 +1356,8 @@ export default function Registration() {
                   Cube Maestro (Category 1)
                 </label>
                 <input
-                  id="cube1"
-                  name="cube1"
+                  id="cube1cat1"
+                  name="cube1cat1"
                   type="text"
                   placeholder="Cube Maestro - Participant 1"
                   onChange={formik.handleChange}
@@ -1367,8 +1367,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="cube2"
-                  name="cube2"
+                  id="cube2cat1"
+                  name="cube2cat1"
                   type="text"
                   placeholder="Cube Maestro - Participant 2"
                   onChange={formik.handleChange}
@@ -1386,8 +1386,8 @@ export default function Registration() {
                   Cube Maestro (Category 2)
                 </label>
                 <input
-                  id="cube1"
-                  name="cube1"
+                  id="cube1cat2"
+                  name="cube1cat2"
                   type="text"
                   placeholder="Cube Maestro - Participant 1"
                   onChange={formik.handleChange}
@@ -1397,8 +1397,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="cube2"
-                  name="cube2"
+                  id="cube2cat2"
+                  name="cube2cat2"
                   type="text"
                   placeholder="Cube Maestro - Participant 2"
                   onChange={formik.handleChange}
@@ -1416,8 +1416,8 @@ export default function Registration() {
                   Cube Maestro (Category 3)
                 </label>
                 <input
-                  id="cube1"
-                  name="cube1"
+                  id="cube1cat3"
+                  name="cube1cat3"
                   type="text"
                   placeholder="Cube Maestro - Participant 1"
                   onChange={formik.handleChange}
@@ -1427,8 +1427,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="cube2"
-                  name="cube2"
+                  id="cube2cat3"
+                  name="cube2cat3"
                   type="text"
                   placeholder="Cube Maestro - Participant 2"
                   onChange={formik.handleChange}
@@ -1448,8 +1448,8 @@ export default function Registration() {
                   Let&apos;s get Quizzical (Category 1)
                 </label>
                 <input
-                  id="cube1"
-                  name="cube1"
+                  id="quizzical1cat1"
+                  name="quizzical1cat1"
                   type="text"
                   placeholder="Let's get Quizzical - Participant 1"
                   onChange={formik.handleChange}
@@ -1459,8 +1459,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="cube2"
-                  name="cube2"
+                  id="quizzical2cat1"
+                  name="quizzical2cat1"
                   type="text"
                   placeholder="Let's get Quizzical - Participant 2"
                   onChange={formik.handleChange}
@@ -1480,8 +1480,8 @@ export default function Registration() {
                   Let&apos;s get Quizzical (Category 2)
                 </label>
                 <input
-                  id="cube1"
-                  name="cube1"
+                  id="quizzical1cat2"
+                  name="quizzical1cat2"
                   type="text"
                   placeholder="Let's get Quizzical - Participant 1"
                   onChange={formik.handleChange}
@@ -1491,8 +1491,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="cube2"
-                  name="cube2"
+                  id="quizzical2cat2"
+                  name="quizzical2cat2"
                   type="text"
                   placeholder="Let's get Quizzical - Participant 2"
                   onChange={formik.handleChange}
@@ -1512,8 +1512,8 @@ export default function Registration() {
                   Let&apos;s get Quizzical (Category 3)
                 </label>
                 <input
-                  id="cube1"
-                  name="cube1"
+                  id="quizzical1cat3"
+                  name="quizzical1cat3"
                   type="text"
                   placeholder="Let's get Quizzical - Participant 1"
                   onChange={formik.handleChange}
@@ -1523,8 +1523,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="cube2"
-                  name="cube2"
+                  id="quizzical2cat3"
+                  name="quizzical2cat3"
                   type="text"
                   placeholder="Let's get Quizzical - Participant 2"
                   onChange={formik.handleChange}
@@ -1543,7 +1543,7 @@ export default function Registration() {
                 </label>
                 <input
                   id="ninjas1"
-                  name="cubninjas1e1"
+                  name="ninjas1"
                   type="text"
                   placeholder="Number Ninjas - Participant 1"
                   onChange={formik.handleChange}
@@ -1553,8 +1553,8 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="cube2"
-                  name="cube2"
+                  id="ninjas2"
+                  name="ninjas2"
                   type="text"
                   placeholder="Number Ninjas - Participant 2"
                   onChange={formik.handleChange}
