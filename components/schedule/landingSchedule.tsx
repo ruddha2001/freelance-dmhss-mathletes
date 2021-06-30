@@ -12,7 +12,7 @@ export default function LandingSchedule() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="255" height="10" rx="5" fill="#6E4C5C" />
+        <rect width="255" height="10" rx="5" fill="#2d111d" />
       </svg>
       <div className="flex items-center justify-between mt-5">
         <p className="text-xl md:text-2xl">

@@ -12,7 +12,7 @@ export default function Events({ event }) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="255" height="10" rx="5" fill="#6E4C5C" />
+        <rect width="255" height="10" rx="5" fill="#2d111d" />
       </svg>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 px-10 justify-between text-center mt-10 text-white">

@@ -34,7 +34,7 @@ export default function Faq() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="255" height="10" rx="5" fill="#6E4C5C" />
+        <rect width="255" height="10" rx="5" fill="#2d111d" />
       </svg>
 
       <Accordion className="mt-10">
