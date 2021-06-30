@@ -14,7 +14,7 @@ import LandingSchedule from "../components/schedule/landingSchedule";
 
 export const getServerSideProps = async () => {
   try {
-    const res = await axios.get(`/api/events`);
+    const res = await axios.get(`${process.env.BASE_URL}/api/events`);
     const eventArray: { name: string; slug: string }[] = res.data.list;
 
     return {

@@ -7,7 +7,7 @@ import UploadFile from "../../components/upload/upload";
 
 export const getServerSideProps = async ({ query: { id } }) => {
   try {
-    const res = await axios.get(`/api/upload/${id}`);
+    const res = await axios.get(`${process.env.BASE_URL}/api/upload/${id}`);
     const data = res.data.fileObject;
     return {
       props: {

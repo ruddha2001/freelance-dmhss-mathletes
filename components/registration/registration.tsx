@@ -570,7 +570,7 @@ export default function Registration() {
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "shapecat2") ? (
+            {formik.values.checked.find((value) => value === "shapecat3") ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
                   Shape Shakers (Category 3)
