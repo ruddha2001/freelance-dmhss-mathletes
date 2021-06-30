@@ -88,7 +88,7 @@ const handler = nc<NextApiRequest, NextApiResponse>()
             ToAddresses: [data.schoolEmail, data.teacherRepresentativeEmail],
           },
           ReplyToAddresses: ["dmhssmathletes@dmhss.org.in"],
-          FromEmailAddress: `info@dmhss.org`,
+          FromEmailAddress: "DMHSS <info@dmhss.org>",
         };
         console.log(await sesv2.sendEmail(mail).promise());
       }
