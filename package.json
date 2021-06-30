@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "argon2": "^0.28.2",
     "aws-sdk": "^2.936.0",
     "axios": "^0.21.1",
     "express-rate-limit": "^5.2.6",
     "formik": "^2.2.9",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.9",
     "multer": "^1.4.2",
     "nanoid": "^3.1.23",
@@ -27,6 +29,7 @@
   },
   "devDependencies": {
     "@types/express-rate-limit": "^5.1.2",
+    "@types/jsonwebtoken": "^8.5.2",
     "@types/mongodb": "^3.6.18",
     "@types/multer": "^1.4.6",
     "@types/node": "^15.12.4",
