@@ -28,7 +28,7 @@ export default function Foreward() {
         innovate and explore Mathematics like the way never imagined before.
         <br />
         <br />
-        The events of the festival were designed in such a manner that not only
+        The events of the festival are designed in such a manner that not only
         will it bring out the creativity of the children but also the
         mathematical rigour of them will be on display. This world class affair
         is bound to create ripples of excitement through the community and it is

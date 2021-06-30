@@ -49,6 +49,7 @@ export default function UploadFile({ fileObject, id }) {
         }
       }
       await axios.post(`/api/register/${id}`, { data: finalUrlArray });
+      await axios.post(`/api/notification/${id}`, {});
       window.location.href = `/success/${id}`;
     } catch (error) {
       if (error.isCustom) {
@@ -79,8 +80,7 @@ export default function UploadFile({ fileObject, id }) {
             https://mathletes.dmhss.org/upload/{id}
           </span>{" "}
           at a later stage to complete your registration (you do NOT need to
-          register again). This link will be disabled once you have successfully
-          uploaded all the documents.
+          register again).
         </p>
         <form>
           {Object.keys(fileObject).map((object) => {
