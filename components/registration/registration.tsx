@@ -8,6 +8,7 @@ export default function Registration() {
   const guidelines = [
     "Participants must attend the Inter school Mathematics fest, Mathletes 2021 in their school uniform.",
     "Participants must provide their Aadhar cards/ birth certificates  or  bonafide certificates issued from their schools.",
+    "If a particular school has students with identical names and surnames, in that case one of them will have to add his/her date of birth in numeric with their full names ( e.g: Aniruddha Chatterjee 24.11.1990)",
     "The host school will not be held responsible for any kind of technical glitch faced by the participating school  during the event.",
     "An alternative arrangement will be made by the host school if it faces any technical glitch.",
     "Cameras should be appropriately placed during all the online events.",
@@ -20,7 +21,7 @@ export default function Registration() {
     "Participants  must make all arrangements of their stationeries.",
     "Participants have to display their materials  before the invigilators.",
     "Unique registration number will be provided to each participant.",
-    "Participants will enter the Zoom meeting with their Unique Registration No. highlighted and not their names.",
+    "When joining the Zoom meeting, participants must mention/highlight their Names + unique registration ID. ( School name should not be mentioned)",
     "Participants  are advised to join the Zoom meeting at least 5 to 6 minutes prior to their scheduled time.",
     "Participants should introduce themselves at the onset of the events using their Unique Registration number.",
     "A student  cannot  participate in more than 4 events.",
@@ -29,7 +30,7 @@ export default function Registration() {
     "Category 1 : Class 6-8",
     "Category 2 : Class 9-10",
     "Category 3 : Class 11-12",
-    "For any kind of query during the online event, the participant may contact the Event  Coordinator.",
+    "For any kind of query regarding the online event, the participant(s) may contact the Event  Coordinator.",
   ];
   const formik = useFormik({
     initialValues: {
@@ -156,7 +157,9 @@ export default function Registration() {
           </ul>
           <p className="mt-3 cursor-pointer">
             <Link href="/coordinators">
-              <a>Please find the Event Coordinators by clicking here.</a>
+              <a>
+                Please find the Event Coordinators' name list and contact, here.
+              </a>
             </Link>
           </p>
         </p>
