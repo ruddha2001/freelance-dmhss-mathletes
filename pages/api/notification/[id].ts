@@ -90,7 +90,16 @@ const handler = nc<NextApiRequest, NextApiResponse>()
           ReplyToAddresses: ["dmhssmathletes@dmhss.org.in"],
           FromEmailAddress: "DMHSS <info@dmhss.org>",
         };
-        console.log(await sesv2.sendEmail(mail).promise());
+        const sesResponse = await sesv2.sendEmail(mail).promise();
+        console.log(sesResponse);
+        await (await database())
+          .collection("archives")
+          .insertOne({
+            id: req.query.id,
+            schoolEmail: data.schoolEmail,
+            teacherEmail: data.teacherRepresentativeEmail,
+            sesResponse,
+          });
       }
       res.status(200).end();
     } catch (error) {

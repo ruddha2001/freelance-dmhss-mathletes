@@ -158,8 +158,8 @@ export default function Registration() {
           <p className="mt-3 cursor-pointer">
             <Link href="/coordinators">
               <a>
-                Please find the Event Coordinators&apos; name list and contact,
-                here.
+                Please find the Event Coordinators&apos; name list and contact,{" "}
+                <span className="underline">here</span>.
               </a>
             </Link>
           </p>
@@ -1287,13 +1287,13 @@ export default function Registration() {
                   required
                 />
                 <input
-                  id="mathathon4cat1"
-                  name="mathathon4cat1"
+                  id="mathathon4cat2"
+                  name="mathathon4cat2"
                   type="text"
                   placeholder="Mathathon - Participant 4"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.mathathon4cat1}
+                  value={formik.values.mathathon4cat2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />

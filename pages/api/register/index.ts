@@ -32,7 +32,7 @@ const handler = nc<NextApiRequest, NextApiResponse>()
           key !== "checked" &&
           requestBody[key] !== ""
         )
-          uniqueSet.add(requestBody[key].toUpperCase());
+          uniqueSet.add(requestBody[key].trim().toUpperCase());
         if (requestBody[key] !== "") nonEmptyObject[key] = requestBody[key];
       }
       const uniqueArray = Array.from(uniqueSet);
