@@ -158,7 +158,8 @@ export default function Registration() {
           <p className="mt-3 cursor-pointer">
             <Link href="/coordinators">
               <a>
-                Please find the Event Coordinators' name list and contact, here.
+                Please find the Event Coordinators&apos; name list and contact,
+                here.
               </a>
             </Link>
           </p>
