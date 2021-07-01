@@ -92,14 +92,13 @@ const handler = nc<NextApiRequest, NextApiResponse>()
         };
         const sesResponse = await sesv2.sendEmail(mail).promise();
         console.log(sesResponse);
-        await (await database())
-          .collection("archives")
-          .insertOne({
-            id: req.query.id,
-            schoolEmail: data.schoolEmail,
-            teacherEmail: data.teacherRepresentativeEmail,
-            sesResponse,
-          });
+        await (await database()).collection("archives").insertOne({
+          id: req.query.id,
+          type: "2nd Notification",
+          schoolEmail: data.schoolEmail,
+          teacherEmail: data.teacherRepresentativeEmail,
+          sesResponse,
+        });
       }
       res.status(200).end();
     } catch (error) {
