@@ -113,6 +113,7 @@ const handler = nc<NextApiRequest, NextApiResponse>()
         schoolEmail: requestBody.schoolEmail,
         teacherEmail: requestBody.teacherRepresentativeEmail,
         sesResponse,
+        timestamp: Date.now().toLocaleString("en-GB"),
       });
 
       res.json({

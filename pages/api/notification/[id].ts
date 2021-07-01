@@ -98,6 +98,7 @@ const handler = nc<NextApiRequest, NextApiResponse>()
           schoolEmail: data.schoolEmail,
           teacherEmail: data.teacherRepresentativeEmail,
           sesResponse,
+          timestamp: Date.now().toLocaleString("en-GB"),
         });
       }
       res.status(200).end();
