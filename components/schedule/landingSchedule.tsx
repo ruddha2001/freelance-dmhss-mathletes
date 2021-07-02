@@ -16,7 +16,7 @@ export default function LandingSchedule() {
       </svg>
       <div className="flex items-center justify-between mt-5">
         <p className="text-xl md:text-2xl">
-          You can check out the schedule for both the days.
+          You can check out the schedule for all the 3 days.
         </p>
         <Link href="/schedule">
           <a className="bg-yellow-500 p-5 rounded-md text-xl text-center">
