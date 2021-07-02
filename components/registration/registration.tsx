@@ -149,7 +149,7 @@ export default function Registration() {
           <ul style={{ listStyleType: "disc" }} className="pl-5 mt-3">
             <li>
               Last date to register is{" "}
-              <span className="font-semibold">8th July 2021</span>.
+              <span className="font-semibold">17th July 2021</span>.
             </li>
             {guidelines.map((guideline, index) => (
               <li key={index}>{guideline}</li>

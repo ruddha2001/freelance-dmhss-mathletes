@@ -16,7 +16,12 @@ export default function EventDescription({ data }) {
       {data.day ? (
         <p className="mt-5">
           <span className="font-bold">Day of the Event:</span> {data.day} (
-          {data.day === "Day 1" ? "24 July 2021" : "25 July 2021"})
+          {data.day === "Day 1"
+            ? "31 July 2021"
+            : data.day === "Day 2"
+            ? "1 August 2021"
+            : "2 August 2021"}
+          )
         </p>
       ) : null}
       <p className="mt-5 leading-normal lg:leading-normal lg:text-3xl">
