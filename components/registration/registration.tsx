@@ -46,10 +46,8 @@ export default function Registration() {
       checked: [],
       art1: "",
       art2: "",
-      shape1cat2: "",
-      shape2cat2: "",
-      shape1cat3: "",
-      shape2cat3: "",
+      shape1: "",
+      shape2: "",
       languniv1cat2: "",
       languniv2cat2: "",
       languniv1cat3: "",
@@ -382,12 +380,8 @@ export default function Registration() {
               <span className="ml-3">Art Integration</span>
             </label>
             <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="shapecat2" />
-              <span className="ml-3">Shape Shakers (Category 2)</span>
-            </label>
-            <label className="block text-sm md:text-xl">
-              <Field type="checkbox" name="checked" value="shapecat3" />
-              <span className="ml-3">Shape Shakers (Category 3)</span>
+              <Field type="checkbox" name="checked" value="shape" />
+              <span className="ml-3">Shape Shakers</span>
             </label>
             <label className="block text-sm md:text-xl">
               <Field type="checkbox" name="checked" value="langunivcat2" />
@@ -545,59 +539,30 @@ export default function Registration() {
               </div>
             ) : null}
 
-            {formik.values.checked.find((value) => value === "shapecat2") ? (
+            {formik.values.checked.find((value) => value === "shape") ? (
               <div className="pt-5">
                 <label className="text-base md:text-xl font-bold">
-                  Shape Shakers (Category 2)
+                  Shape Shakers
                 </label>
                 <input
-                  id="shape1cat2"
-                  name="shape1cat2"
+                  id="shape1"
+                  name="shape1"
                   type="text"
                   placeholder="Shape Shakers - Participant 1"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.shape1cat2}
+                  value={formik.values.shape1}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                   required
                 />
                 <input
-                  id="shape2cat2"
-                  name="shape2cat2"
+                  id="shape2"
+                  name="shape2"
                   type="text"
                   placeholder="Shake Shakers - Participant 2"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.shape2cat2}
-                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
-                />
-              </div>
-            ) : null}
-
-            {formik.values.checked.find((value) => value === "shapecat3") ? (
-              <div className="pt-5">
-                <label className="text-base md:text-xl font-bold">
-                  Shape Shakers (Category 3)
-                </label>
-                <input
-                  id="shape1cat3"
-                  name="shape1cat3"
-                  type="text"
-                  placeholder="Shape Shakers - Participant 1"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.shape1cat3}
-                  className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
-                  required
-                />
-                <input
-                  id="shape2cat3"
-                  name="shape2cat3"
-                  type="text"
-                  placeholder="Shake Shakers - Participant 2"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.shape2cat3}
+                  value={formik.values.shape2}
                   className="border-2 block w-full mt-1 mb-5 text-sm md:text-xl p-2 rounded-lg"
                 />
               </div>
